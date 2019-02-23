@@ -168,7 +168,6 @@ li {
    My CSS
    ========================================================================== */
 
-/* ---- base ---- */
 
 html,
 body {
@@ -211,7 +210,7 @@ canvas {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #b3b7d7;
+  background-color: #d8ddff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -1083,4 +1082,13 @@ canvas {
     .secondprize p{
         padding: 1rem;
     }
+}
+
+
+/*Headig Part*/
+
+#scene{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
 }
