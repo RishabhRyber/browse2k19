@@ -317,10 +317,21 @@ canvas {
   position: absolute;
   z-index: 5;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
   width: 100%;
 }
 
+#aboutFest{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    top: 55%;
+    font-size: xx-large !important;
+    font-weight: bolder;
+    font-family: 'Quicksand';
+
+}
 .headContainer1 {
     position: relative;
     height: 30vh;
@@ -355,14 +366,6 @@ canvas {
     font-weight: bolder;
 }
 
-#subHeading {
-    float: left;
-    font-size: 2.5vw;
-    padding-left: 2rem;
-    position: relative;
-    color: white;
-    font-family: 'Quicksand';
-}
 .kuchbhi{
     margin-top: -2rem;
 }
