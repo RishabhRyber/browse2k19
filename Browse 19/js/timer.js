@@ -6,10 +6,10 @@
 // variables
 let time,
     countDownDate = new Date
-    ("September 21, 2018 23:59:59").getTime(),
+    ("March 19, 2019 23:59:59").getTime(),
     reverseFlapDirection = false,
-    bgColor = "49, 51, 51",
-    fontColor = "204,204,204",
+    bgColor = "0,0,0",
+    fontColor = "0,0,0",
     segments = 10,
 
     html = "",

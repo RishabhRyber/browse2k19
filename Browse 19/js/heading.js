@@ -108,13 +108,6 @@ function initScene(){
 
 }
 
-function onMouseClick(){
-    radius++;
-    if(radius ===5){
-        radius = 0;
-    }
-}
-
 function render(a) {
     requestAnimationFrame(render);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -126,7 +119,6 @@ function render(a) {
 window.addEventListener("resize", initScene);
 window.addEventListener("mousemove", onMouseMove);
 window.addEventListener("touchmove", onTouchMove);
-window.addEventListener("click", onMouseClick);
 window.addEventListener("touchend", onTouchEnd);
 initScene();
 requestAnimationFrame(render);

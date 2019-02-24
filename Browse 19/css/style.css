@@ -306,46 +306,19 @@ canvas {
 
 /*First Page Part*/
 
-.sponsers{
-    margin-top: 4rem;
-}
-.sit {
-    max-height: 150px;
-    max-width: 150px;
-}
-.csi {
-    margin-top: 1rem;
-    max-height: 150px;
-    max-width: 150px;
-}
-.sses {
-    margin-top: 1rem;
-    max-height: 250px;
-    max-width: 250px;
-}
-.bcs {
-    margin-top: 1rem;
-    max-height: 250px;
-    max-width: 250px;
-}
-
-.sark {
-    max-height: 250px;
-    max-width: 250px;
-}
-
-.ieee {
-    margin-top: 1rem;
-    max-height: 300px;
-    max-width: 300px;
-}
-
-.head {
+.head { 
     font-family: 'archive';
-    color: white;
+    color: black;
     letter-spacing: 0.5rem;
     padding: 1%;
     font-size: 2vw;
+}
+.sit_head {
+  position: absolute;
+  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;  
+  width: 100%;
 }
 
 .headContainer1 {
@@ -662,7 +635,7 @@ canvas {
     width: 40vw;
     position: absolute;
     top: 60%;
-    left: 25%;
+    left: 30%;
 }
 
 .splitflap {
@@ -682,10 +655,11 @@ canvas {
 
 .splitflap > div {
     width: 66%;
-    border: 2px solid skyblue;
+    border: 2px solid black;
     overflow: hidden;
     left: 50%;
     margin-left: calc(var(--width-segment)/3*-1);
+    background-color: #555 !important;
 }
 
 .front-top {
@@ -770,7 +744,7 @@ canvas {
     }
     50% {
         transform: rotateX(90deg);
-        background-color: skyblue;
+        background-color: black;
     }
     100% {
         transform: rotateX(90deg);
@@ -814,7 +788,7 @@ canvas {
     content: ":";
     position: relative;
     font-family: futura;
-    color: #fff;
+    color: #000;
     top: -7.5vw;
     left: 1.5vw;
     font-size: 5vw;
@@ -827,10 +801,10 @@ canvas {
 
 
 .text {
-    width: 70%;
+    width: 60%;
     height: 5%;
     font-size: 2vw;
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -849,9 +823,9 @@ canvas {
     justify-content: center;
     min-width: 15vw;
     position: relative;
+    margin-top: -4rem;
     font-family: sans-serif;
     font-weight: 100;
-    margin-top: 23vh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1165,7 +1139,7 @@ canvas {
 /*Headig Part*/
 
 #scene{
-    position: absolute;
+    position: relative;
     width: 100vw;
     height: 100vh;
 }
