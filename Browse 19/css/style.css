@@ -295,14 +295,39 @@ canvas {
 
 /*Page separation Part*/
 
-#main1,
-#main2 {
+#MENU{
     position: relative;
     height: 100%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+  display: block;
 }
+
+#ABOUT {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  display: none;
+}
+
+.menu_text{
+  position: absolute;
+  z-index: 5;
+  margin-top: 5%;
+  margin-left: 1.5%;
+  margin-right: auto;
+  width: 1%;
+  height: 100%;
+  word-wrap: break-word;
+  font-family: 'archive';
+  color: black;
+  letter-spacing: 0.5rem;
+  font-size: 2vw;
+}
+
 
 /*First Page Part*/
 

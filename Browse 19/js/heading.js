@@ -1,8 +1,7 @@
-
-/**
- * Created by Rishabh on 24-Feb-19.
- */
-
+var rad=1.5;
+if (window.innerWidth>720){
+  rad=5;
+}
 
 var canvas = document.querySelector("#scene"),
     ctx = canvas.getContext("2d"),
@@ -24,7 +23,7 @@ function Particle(x,y){
         x : x,
         y: y
     };
-    this.r =  5;
+    this.r =  rad;
     this.vx = (Math.random()-0.5)*80;
     this.vy = (Math.random()-0.5)*80;
     this.accX = 0;
@@ -122,4 +121,3 @@ window.addEventListener("touchmove", onTouchMove);
 window.addEventListener("touchend", onTouchEnd);
 initScene();
 requestAnimationFrame(render);
-

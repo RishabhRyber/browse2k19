@@ -22,17 +22,20 @@
       <label id="trigger" for="menu-toggle"></label>
       <label id="burger" for="menu-toggle"></label>
       <ul id="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a data-toggle="tab" href="#home" onclick="changeTab('MENU')">Home</a></li>
+          <li><a data-toggle="tab" href="#about" onclick="changeTab('ABOUT')">About</a></li>
+          <li><a data-toggle="tab" href="#gaming">Life Extension</a></li>
+          <li><a data-toggle="tab" href="#cyber">Cyber Etymology</a></li>
       </ul>
   </div>
- <div id="main1">
+    <div class="menu_text">
+      <h1 id="menu_txt">MENU</h1>
+    </div>
      <div class="sit_head text-center">
         <h3 class="head">Siddaganga Institute Of Technology<br> Tumakuru, Karnataka - 572103</h3>
      </div>
      <div id="particles-js"></div>
+  <div id="MENU">
      <canvas id="scene"></canvas>
      <div id="aboutFest" class="text-center">Technical Fest Of CSE ISE and MCA</div>
 
@@ -45,6 +48,8 @@
               <div>Seconds</div>
          </div>
      </div>
+ </div>
+ <div id="ABOUT">
  </div>
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="js/particles.js"></script>
