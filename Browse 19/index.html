@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" media="screen" href="css/style.css">
   <link rel="stylesheet" media="screen" href="css/font.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" media="screen" href="css/bootstrap.css">
+    <link rel="stylesheet" media="screen" href="css/menu.css">
 </head>
 <body >
   <div class="loaderMain">
@@ -16,23 +17,35 @@
       <div class='loader-ring-track'></div>
     </div>
   </div>
-  <div class="sit_head text-center">
-    <h3 class="head">Siddaganga Institute Of Technology<br> Tumakuru, Karnataka - 572103</h3>
+  <div id="menu_btn">
+      <input type="checkbox" id="menu-toggle"/>
+      <label id="trigger" for="menu-toggle"></label>
+      <label id="burger" for="menu-toggle"></label>
+      <ul id="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
   </div>
-  <div id="particles-js"></div>
-  <canvas id="scene"></canvas>
-  <div id="aboutFest" class="text-center">Technical Fest Of CSE ISE and MCA</div>
-  
-  <div class="center"></div>
-  <div id="timer" class="container">
-      <div class="text">
-          <div>Days</div>
-          <div>Hours</div>
-          <div>Minutes</div>
-          <div>Seconds</div>
-      </div>
-  </div>
+ <div id="main1">
+     <div class="sit_head text-center">
+        <h3 class="head">Siddaganga Institute Of Technology<br> Tumakuru, Karnataka - 572103</h3>
+     </div>
+     <div id="particles-js"></div>
+     <canvas id="scene"></canvas>
+     <div id="aboutFest" class="text-center">Technical Fest Of CSE ISE and MCA</div>
 
+     <div class="center"></div>
+     <div id="timer" class="container">
+         <div class="text">
+              <div>Days</div>
+              <div>Hours</div>
+              <div>Minutes</div>
+              <div>Seconds</div>
+         </div>
+     </div>
+ </div>
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="js/particles.js"></script>
  <script src="js/heading.js"></script>
