@@ -157,7 +157,7 @@ video {
 
 body {
     line-height: 1;
-    overflow-x: hidden !important;
+    overflow: hidden !important;
 
 }
 
@@ -237,7 +237,8 @@ select {
 }
 
 li {
-    list-style: none
+    list-style: none;
+    cursor: pointer;
 }
 
 
@@ -296,16 +297,70 @@ canvas {
 /*Page separation Part*/
 
 #MENU{
-    position: relative;
+    position: absolute;
     height: 100%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
   display: block;
+    cursor: pointer;
 }
 
 #ABOUT {
-    position: relative;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  display: none;
+}
+#CYBER{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  display: none;
+}
+#LIFE{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  display: none;
+}
+#MIND{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  display: none;
+}
+#BYTE{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  display: none;
+}#PHOTO{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  display: none;
+}#PRASTUTI{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  display: none;
+}#MIND{
+    position: absolute;
     height: 100%;
     width: 100%;
     margin-left: auto;
