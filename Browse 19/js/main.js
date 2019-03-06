@@ -1,5 +1,9 @@
 // Avoid Scrolling in beginig loader part
 
+window.onload = function(){
+  document.getElementById('menu_txt').style.fontSize = "170%";
+}
+
 function noscroll() {
     window.scrollTo( 0, 0 );
 }
@@ -25,8 +29,24 @@ function changeTab(id)
   document.getElementById(id).style.display = 'block';
   document.getElementById('menu_txt').innerHTML= id;
 
-  if (id != "REGISTER"){
-      document.getElementById('trigger').click();
+  if (id != "REGISTER"){    document.getElementById('trigger').click();
+  }
+  if(id == "CYBER"){
+    document.getElementById('menu_txt').innerHTML = "CYBER&nbsp;ETYMOLOGY";
+    document.querySelector('.menu_text').style.marginLeft = "2%";
+  }
+  if(id == "LIFE"){
+    document.getElementById('menu_txt').innerHTML = "LIFE&nbsp;EXTENSION";
+    document.querySelector('.menu_text').style.marginLeft = "2%";
+  }
+  if(id == "MIND"){
+    document.getElementById('menu_txt').innerHTML = "MIND&nbsp;SNARE";
+  }
+  if(id == "BYTE"){
+    document.getElementById('menu_txt').innerHTML = "BYTE&nbsp;SURGE";
+  }
+  if(id == "PHOTO"){
+    document.getElementById('menu_txt').innerHTML = "PHOTO&nbsp;HUNT";
   }
 }
 changeTab("MENU");

@@ -328,7 +328,7 @@ canvas {
   position: absolute;
   z-index: 5;
   margin-top: 5%;
-  margin-left: 1.5%;
+  margin-left: 2%;
   margin-right: auto;
   width: 1%;
   height: 100%;
@@ -336,7 +336,6 @@ canvas {
   font-family: 'archive';
   color: black;
   letter-spacing: 0.5rem;
-  font-size: 2vw;
 }
 
 
