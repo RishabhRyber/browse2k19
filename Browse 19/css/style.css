@@ -277,7 +277,14 @@ canvas {
     font-family: batman;
     background: #000;
 }
-
+/**/
+#mc-embedded-subscribe{
+    color: white;
+}
+.btn-outline-dark{
+    color: white !important;
+}
+/**/
 /* ---- particles.js container ---- */
 
 canvas {
@@ -297,17 +304,17 @@ canvas {
 /*Page separation Part*/
 
 .mainContainers{
-    padding: 1rem;
+    padding: 3rem !important;
     position: absolute;
     margin-top: 10%;
-    height: 70%;
+   height: 70%;
     display: block;
     z-index: 11;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: #bfb8b8;
-    border-radius: 1rem;
-
+    background-color: rgba(0,0,0,0.6);
+    /* border-radius: 1rem; */
+    color: white;
 }
 
 .mainContainers [type="checkbox"]:not(:checked){
@@ -335,7 +342,7 @@ canvas {
 
 /*First Page Part*/
 
-.head { 
+.head {
     font-family: 'archive';
     color: black;
     letter-spacing: 0.5rem;
@@ -1175,4 +1182,3 @@ canvas {
     width: 100vw;
     height: 100vh;
 }
-
