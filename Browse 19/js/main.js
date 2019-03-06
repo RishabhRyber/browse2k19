@@ -49,5 +49,16 @@ function changeTab(id)
     document.getElementById('menu_txt').innerHTML = "PHOTO&nbsp;HUNT";
   }
 }
+
+document.getElementById('trigger').addEventListener("click",function(){
+  if (document.getElementById("menu_btn").style.zIndex==10)
+    document.getElementById("menu_btn").style.zIndex=18;
+  else {
+    document.getElementById("menu_btn").style.zIndex=10;
+  }
+  console.log("action hua");
+});
+
+
 changeTab("MENU");
 document.getElementById('trigger').click();
