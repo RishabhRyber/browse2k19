@@ -10,14 +10,16 @@
     <link rel="stylesheet" media="screen" href="css/menu.css">
 </head>
 <body >
-  <div class="loaderMain">
+<!--Loader-->
+<div class="loaderMain">
     <div class='loader-ring'>
       <div class='loader-ring-light'></div>
       <img src="img/logo.png" class="loaderLogo">
       <div class='loader-ring-track'></div>
     </div>
   </div>
-  <div id="menu_btn">
+<!--Menu System-->
+<div id="menu_btn">
       <input type="checkbox" id="menu-toggle"/>
       <label id="trigger" for="menu-toggle"></label>
       <label id="burger" for="menu-toggle"></label>
@@ -33,14 +35,17 @@
           
       </ul>
   </div>
-    <div class="menu_text">
-      <h1 id="menu_txt">MENU</h1>
-    </div>
-     <div class="sit_head text-center">
-        <h3 class="head">Siddaganga Institute Of Technology<br> Tumakuru, Karnataka - 572103</h3>
-     </div>
-     <div id="particles-js"></div>
-  <div id="MENU">
+<div class="menu_text">
+  <h1 id="menu_txt">MENU</h1>
+</div>
+<!--Header Seciton-->
+<div class="sit_head text-center">
+<h3 class="head">Siddaganga Institute Of Technology<br> Tumakuru, Karnataka - 572103</h3>
+</div>
+<div id="particles-js"></div>
+
+<!--Main Home Page Body-->
+<div id="MENU">
      <canvas id="scene"></canvas>
      <div id="aboutFest" class="text-center">Technical Fest Of CSE ISE and MCA</div>
 
@@ -54,77 +59,180 @@
          </div>
      </div>
  </div>
- <div id="ABOUT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error non assumenda, veniam culpa. Reiciendis voluptas minus totam, eaque consequatur quasi voluptatem dignissimos rerum temporibus, doloribus adipisci iure voluptatibus rem possimus!
- </div>
- <div id="MIND">Introduction
-Technical Quiz
-It is a quiz contest between different teams on topics of technology,programming and technical aspects.
 
-
-Notices
-Maximum 2 members per Team
-Unlimited Entries
-For more Details about Topic Contact :Mr. Prashanth G K
+<!--Individual event Pages-->
+<div class="row">
+    <div class="mainContainers offset-sm-2 col-sm-8 offset-sm-2" id="ABOUT">
+        <h2>Organising Departments: </h2>
+        <br>
+        <br>
+        <div class="row">
+           <div class="offset-sm-1 col-sm-3"><b>CSE</b>
+               Depatement of Computer Science and Engineering
+           </div>
+           <div class="col-sm-3"><b>ISE</b>
+               Department of Information Science and Engineering
+           </div>
+           <div class="col-sm-3"><b>MCA</b>
+               Master of Computer Application
+           </div>
+       </div>
+    </div>
 </div>
- <div id="CYBER">Introduction
-Etymology : Derivation of words from originals
+<div class="row">
+    <div class="mainContainers offset-sm-2 col-sm-8 offset-sm-2" id="MIND">
+        <h3>Introduction</h3>
+        <p>
+            Technical Quiz
+            It is a quiz contest between different teams on topics of technology,programming and technical aspects.
 
-It is a game of scrabble related to Computer Science and Technology.
 
-3 members per team
-
-During the competition 30 characters will be given to each team.</div>
- <div id="LIFE">Introduction
-Gaming Contest
-
-Gaming is a very popular frenzy and we now have hundreds of gamers. They need more exposure to hone their skills and compete with the best in the college. We hope that this meet will help them come together and give them a fair idea about where they stand.This will be the ideal platform where budding gamers can explore and develop their skills and the more experienced ones can use this as a good practice session
-
-Notices
-Individual Enteries
-
-Unlimited Entries
-
-For more Details about Topic Contact : Mr. Kallinatha (CSE dept.)</div>
- <div id="PRASTUTI">
-     Introduction
-Paper Presentation
-
-What is Paper Presentation : Paper Presentation is all about how you put your topic or present your topic in front of the audience. They see the way you present your topic, the way you put your points, your presentation style, your language and how promptly and effectively you answer their questions.
-
-If you are a whiz kid when it comes to articulating an idea and stating your viewpoint. And this is your golden chance to do so.This is your platform to express yourself, make your views known, explore your ideas and make the best paper presentation ever. Compete with the sharpest minds in the engineering circuit, lock horns with the best all while standing your ground!
-
-Notices
-Maximum 2 members per Team
-
-Last Date for Submission :5 MARCH 2018
-
-Download the below two pdf for the topics and guidlines of paper presentation 
- </div>
- <div id="BYTE">Introduction
-A programming competition that involves giving a set of logical or mathematical problems to the contestants.The contestants are required to write computer programs capable of solving each problem. Judging is based mostly upon number of problems solved and time spent for writing successful solutions, but may also include other factors (quality of output produced, execution time, program size, etc.).
-Notices
-Maximum 2 members per Team
-
-Unlimited Entries
-
-Language : C, C++
-
-For further information contact: Mr. Prabodh C P (CSE dept)
+            Notices
+            Maximum 2 members per Team
+            Unlimited Entries
+            For more Details about Topic Contact :Mr. Prashanth G K
+        </p>
+        <br>
+        <button class="btn btn-block btn-outline-dark" onclick="changeTab('REGISTER')">Register</button>
+    </div>
 </div>
- <div id="PHOTO">Introduction
-Selfie Gaming Contest
+<div class="mainContainers offset-sm-2 col-sm-8 offset-sm-2" id="CYBER">
+    <h3>Introduction</h3>
+    <p>
+        Etymology : Derivation of words from originals
 
-It is a contest in which the contestants show there creativity in taking selfies.
+        It is a game of scrabble related to Computer Science and Technology.
 
-Notices
-Maximum 2 members per Team
+        3 members per team
 
-Unlimited Entries
- </div>
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="js/particles.js"></script>
- <script src="js/heading.js"></script>
- <script src="js/timer.js"></script>
- <script src="js/main.js"></script>
+        During the competition 30 characters will be given to each team.
+    </p>
+    <br>
+    <button class="btn btn-block btn-outline-dark" onclick="changeTab('REGISTER')">Register</button>
+    <br>
+</div>
+<div class="mainContainers offset-sm-2 col-sm-8 offset-sm-2" id="LIFE">
+    <h3>Introduction</h3>
+    <p>Gaming Contest
+
+        Gaming is a very popular frenzy and we now have hundreds of gamers. They need more exposure to hone their skills and compete with the best in the college. We hope that this meet will help them come together and give them a fair idea about where they stand.This will be the ideal platform where budding gamers can explore and develop their skills and the more experienced ones can use this as a good practice session
+
+        Notices
+        Individual Enteries
+
+        Unlimited Entries
+
+        For more Details about Topic Contact : Mr. Kallinatha (CSE dept.)
+    </p>
+    <br>
+    <button class="btn btn-block btn-outline-dark" onclick="changeTab('REGISTER')">Register</button>
+    <br>
+</div>
+<div class="mainContainers offset-sm-2 col-sm-8 offset-sm-2" id="PRASTUTI">
+    <h3>Introduction</h3>
+    <p>
+        Paper Presentation
+
+        What is Paper Presentation : Paper Presentation is all about how you put your topic or present your topic in front of the audience. They see the way you present your topic, the way you put your points, your presentation style, your language and how promptly and effectively you answer their questions.
+
+        If you are a whiz kid when it comes to articulating an idea and stating your viewpoint. And this is your golden chance to do so.This is your platform to express yourself, make your views known, explore your ideas and make the best paper presentation ever. Compete with the sharpest minds in the engineering circuit, lock horns with the best all while standing your ground!
+
+        Notices
+        Maximum 2 members per Team
+
+        Last Date for Submission :5 MARCH 2018
+    </p>
+    <br>
+    <button class="btn btn-block btn-outline-dark" onclick="changeTab('REGISTER')">Register</button>
+    <br>
+</div>
+<div class="mainContainers offset-sm-2 col-sm-8 offset-sm-2" id="BYTE">
+    <h3>Introduction</h3>
+    <p>
+        A programming competition that involves giving a set of logical or mathematical problems to the contestants.The contestants are required to write computer programs capable of solving each problem. Judging is based mostly upon number of problems solved and time spent for writing successful solutions, but may also include other factors (quality of output produced, execution time, program size, etc.).
+        Notices
+        Maximum 2 members per Team
+
+        Unlimited Entries
+
+        Language : C, C++
+
+        For further information contact: Mr. Prabodh C P (CSE dept)
+    </p>
+    <br>
+    <button class="btn btn-block btn-outline-dark" onclick="changeTab('REGISTER')">Register</button>
+    <br>
+</div>
+<div class="mainContainers offset-sm-2 col-sm-8 offset-sm-2" id="PHOTO">
+    <h3>Introduction</h3>
+    <p>
+        Selfie Gaming Contest
+
+        It is a contest in which the contestants show there creativity in taking selfies.
+
+        Notices
+        Maximum 2 members per Team
+
+        Unlimited Entries
+    </p>
+    <br>
+    <button class="btn btn-block btn-outline-dark" onclick="changeTab('REGISTER')">Register</button>
+    <br>
+</div>
+<div class="mainContainers offset-sm-2 col-sm-8 offset-sm-2" id="REGISTER">
+      <div id="form-container">
+          <form class="form-horizontal validate" action="https://facebook.us17.list-manage.com/subscribe/post?u=bad4b6d92f67994e8d389f72f&amp;id=c1311df6e9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+              <div id="heading">
+                  <h2>REGISTER FOR BROWSE2K18</h2>
+              </div>
+              <br>
+              <div  class="form-group" id="name">
+                  <label for="mce-NAME" class="col-sm-3">Name Of Student:<font color=red> *</font></label>
+                  <input type="text" value="" name="NAME" class="required,form-control col-sm-3" id="mce-NAME" >
+              </div>
+              <div  class="form-group" id="name_clg">
+                  <label for="mce-COLLEGE" class="col-sm-3">Name Of College:<font color=red> *</font></label>
+                  <input type="text" value="" name="COLLEGE" class="col-sm-3 required,form-control" id="mce-COLLEGE">
+              </div>
+              <div class="form-group" id="sem">
+                  <label for="mce-SEMESTER" class="col-sm-3">Semester: <font color=red> *</font></label>
+                  <input type="text" value="" name="SEMESTER" class="col-sm-3 required" id="mce-SEMESTER">
+              </div>
+              <div class="form-group" id="usn">
+                  <label for="mce-USN" class="col-sm-3">USN:</label>
+                  <input type="text" value="" name="USN" class="col-sm-3" id="mce-USN">
+              </div>
+              <div class="form-group" id="mail">
+                  <label for="mce-EMAIL" class="col-sm-3">Email Address:<font color=red>  *</font></label>
+                  <input type="email" value="" name="EMAIL" class="required email col-sm-3" id="mce-EMAIL">
+              </div>
+
+              <div class="form-group" id="mob_no">
+                  <label for="mce-NUMBER" class="col-sm-3">Contact Number:<font color=red> *</font></label>
+                  <input type="number" name="NUMBER" class="required col-sm-3" value="" id="mce-NUMBER">
+              </div>
+              <div id="events_opt">
+                  <strong>EVENTS TO REGISTER:<font color=red> *</font> </strong><br>
+                  <input type="checkbox" value="1" name="group[2693][1]" id="mce-group[2693]-2693-0"><label for="mce-group[2693]-2693-0">Byte Surge</label><br>
+                  <input type="checkbox" value="2" name="group[2693][2]" id="mce-group[2693]-2693-1"><label for="mce-group[2693]-2693-1">Cyber Etymology</label><br>
+                  <input type="checkbox" value="4" name="group[2693][4]" id="mce-group[2693]-2693-2"><label for="mce-group[2693]-2693-2">Life Extensions</label><br>
+                  <input type="checkbox" value="8" name="group[2693][8]" id="mce-group[2693]-2693-3"><label for="mce-group[2693]-2693-3">Mind Snare</label><br>
+                  <input type="checkbox" value="16" name="group[2693][16]" id="mce-group[2693]-2693-4"><label for="mce-group[2693]-2693-4">Photo Hunt</label><br>
+              </div>
+              <br><br>
+              <div id="submit_btn">
+                  <input type="submit" value="Register" name="subscribe" id="mc-embedded-subscribe" class="btn btn-block btn-outline-dark">
+              </div>
+          </form>
+      </div>
+  </div>
+
+
+<!--Scripts Include Section-->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/heading.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

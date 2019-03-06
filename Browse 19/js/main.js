@@ -21,8 +21,13 @@ function changeTab(id)
   document.getElementById('PHOTO').style.display = 'none';
   document.getElementById('PRASTUTI').style.display = 'none';
   document.getElementById('BYTE').style.display = 'none';
+  document.getElementById('REGISTER').style.display = 'none';
   document.getElementById(id).style.display = 'block';
-  document.getElementById('trigger').click();
   document.getElementById('menu_txt').innerHTML= id;
-  
+
+  if (id != "REGISTER"){
+      document.getElementById('trigger').click();
+  }
 }
+changeTab("MENU");
+document.getElementById('trigger').click();

@@ -296,76 +296,25 @@ canvas {
 
 /*Page separation Part*/
 
-#MENU{
+.mainContainers{
+    padding: 1rem;
     position: absolute;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  display: block;
-    cursor: pointer;
+    margin-top: 10%;
+    height: 70%;
+    display: block;
+    z-index: 11;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #bfb8b8;
+    border-radius: 1rem;
+
 }
 
-#ABOUT {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  display: none;
+.mainContainers [type="checkbox"]:not(:checked){
+    display: inline-block !important;
 }
-#CYBER{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  display: none;
-}
-#LIFE{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  display: none;
-}
-#MIND{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  display: none;
-}
-#BYTE{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  display: none;
-}#PHOTO{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  display: none;
-}#PRASTUTI{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  display: none;
-}#MIND{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  display: none;
+.mainContainers [type="checkbox"]:checked {
+    display: inline-block !important;
 }
 
 .menu_text{
