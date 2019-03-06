@@ -1,3 +1,36 @@
+/* Scrolling Trial */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+.mainContainers p{
+  font-family: Quicksand;
+  font-size: 1.5rem;
+}
+.mainContainers button{
+    width: 20% !important;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
 /*Loader*/
 
 .loaderMain{
@@ -278,6 +311,7 @@ canvas {
 .btn-outline-dark{
     color: white !important;
 }
+
 /**/
 /* ---- particles.js container ---- */
 
@@ -346,6 +380,17 @@ canvas {
 
 /*First Page Part*/
 
+#aboutFest{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    top: 55%;
+    font-size: xx-large !important;
+    font-weight: bolder;
+    font-family: 'Quicksand';
+}
+
 .head {
     font-family: 'archive';
     color: black;
@@ -361,297 +406,170 @@ canvas {
   width: 100%;
 }
 
-#aboutFest{
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    top: 55%;
-    font-size: xx-large !important;
-    font-weight: bolder;
-    font-family: 'Quicksand';
-
-}
-.headContainer1 {
-    position: relative;
-    height: 30vh;
-    padding: 1rem;
-    padding-right: 5rem;
-}
-
-.headContainer2 {
-    margin-top: 5rem;
-    position: relative;
-    border-left: 2px solid white;
-    height: 30vh;
-    padding: 1rem;
-}
-
-.headContainer1 img {
-    margin-top: 2rem;
-    position: relative;
-    float: right;
-    max-height: 40vh;
-    max-width: 40vw;
-}
-
-#heading {
-    font-family: 'Righteous';
-    font-size: 5.5vw;
-    padding-left: 2rem;
-    color: white;
-    position: relative;
-    letter-spacing: 1rem;
-    float: left;
-    font-weight: bolder;
-}
-
-.kuchbhi{
-    margin-top: -2rem;
-}
-
 /*******Media Queries*******/
 
 @media screen and (max-width: 600px) {
-    #main1 {
-        width: 100%;
+    #menu_txt{
+      display: none;
     }
-    #main2 {
-        width: 90%;
+    .mainContainers{
+      top:20%;
+      font-size: 0.5rem;
     }
-    .head {
-        font-size: 3vw;
+    .mainContainers p{
+      font-size: 1rem;
     }
-    .headContainer1 img {
-        max-height: 30vh;
-        max-width: 50vw;
-        float: none;
+    .loader-ring{
+      left:11%;
     }
-    .headContainer1 {
-        padding: 0rem;
+
+    #aboutFest{
+      font-size: 1.5rem !important;
     }
-    #heading1 {
-        top: 45%;
-        left: 40%;
-        font-size: 2rem;
+
+    .sit_head{
+      top: 13%;
     }
-    .headContainer2 {
-        margin-top: 1rem;
-        border-left: none;
+    .head{
+      font-size: 0.7rem !important;
     }
-    #heading {
-        float: none;
-        font-size: 10vw;
+
+    .mainContainers button{
+      width: 50% !important;
     }
-    #subHeading {
-        float: none;
-        padding-left: 0rem;
-        font-size: 1.5rem;
+
+    .text{
+      margin-top: -6.2rem;
     }
-    .sark {
-        margin-bottom: 2rem;
+
+    label{
+      font-size: 1rem;
     }
-    .kuchbhi{
-        margin-top: -2rem;
-    }
+
+
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px){
-    #main1 {
-        width: 100%;
-    }
-    #main2 {
-        width: 90%;
-    }
-    .head {
-    }
-    .headContainer1 img {
-        max-height: 30vh;
-        max-width: 50vw;
-        float: none;
-    }
-    .headContainer1 {
-        padding: 0rem;
-        margin-top: -2rem;
-    }
-    #heading1 {
-        top: 45%;
-        left: 40%;
-        font-size: 2rem;
-    }
-    .headContainer2 {
-        margin-top: 1rem;
-        border-left: none;
-    }
-    #heading {
-        float: none;
-    }
-    #subHeading {
-        float: none;
-    }
-    .sark {
-        margin-bottom: 2rem;
-    }
-    .kuchbhi{
-        margin-top: 0rem;
-    }
+  #menu_txt{
+    display: none;
+  }
+  .mainContainers{
+    top:20%;
+    font-size: 0.5rem;
+  }
+  .mainContainers p{
+    font-size: 1rem;
+  }
+  .loader-ring{
+    left:11%;
+  }
+
+  #aboutFest{
+    font-size: 1.5rem !important;
+  }
+
+  .sit_head{
+    top: 13%;
+  }
+  .head{
+    font-size: 0.7rem !important;
+  }
+
+  .mainContainers button{
+    width: 50% !important;
+  }
+
+  .text{
+    margin-top: -6.2rem;
+  }
+
+  label{
+    font-size: 1rem;
+  }
+
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait){
-    #main1 {
-        width: 100%;
-    }
-    #main2 {
-        width: 90%;
-    }
-    .head {
-    }
-    .headContainer1 img {
-        max-height: 30vh;
-        max-width: 50vw;
-        float: none;
-    }
-    .headContainer1 {
-        padding: 0rem;
-        margin-top: -2rem;
-    }
-    #heading1 {
-        top: 45%;
-        left: 40%;
-        font-size: 2rem;
-    }
-    .headContainer2 {
-        margin-top: 1rem;
-        border-left: none;
-    }
-    #heading {
-        float: none;
-        font-size: 10vw;
-    }
-    #subHeading {
-        float: none;
-        font-size: 6vw;
-        padding-left: 0rem;
-    }
-    .sark {
-        margin-bottom: 2rem;
-    }
-    .kuchbhi{
-        margin-top: 5rem;
-    }
-    .sit {
-        max-height: 150px;
-        max-width: 150px;
-    }
-    .csi {
-        margin-top: 1rem;
-        max-height: 100px;
-        max-width: 100px;
-    }
-    .sses {
-        margin-top: 1rem;
-        max-height: 150px;
-        max-width: 150px;
-    }
-    .bcs {
-        margin-top: 1rem;
-        max-height: 150px;
-        max-width: 150px;
-    }
+  #menu_txt{
+    display: none;
+  }
+  .mainContainers{
+    top:20%;
+    font-size: 0.5rem;
+  }
+  .mainContainers p{
+    font-size: 1rem;
+  }
+  .loader-ring{
+    left:11%;
+  }
 
-    .sark {
-        max-height: 200px;
-        max-width: 200px;
-    }
+  #aboutFest{
+    font-size: 1.5rem !important;
+  }
 
-    .ieee {
-        margin-top: 1rem;
-        max-height: 200px;
-        max-width: 200px;
-    }
+  .sit_head{
+    top: 13%;
+  }
+  .head{
+    font-size: 0.7rem !important;
+  }
+
+  .mainContainers button{
+    width: 50% !important;
+  }
+  .text{
+    margin-top: -6.2rem;
+  }
+
+  label{
+    font-size: 1rem;
+  }
+
 
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: landscape){
-    #main1 {
-        width: 100%;
-    }
-    #main2 {
-        width: 90%;
-    }
-    .head {
-    }
-    .headContainer1 img {
-        max-height: 30vh;
-        max-width: 50vw;
-        float: none;
-    }
-    .headContainer1 {
-        padding: 0rem;
-        margin-top: -2rem;
-    }
-    #heading1 {
-        top: 45%;
-        left: 40%;
-        font-size: 2rem;
-    }
-    .headContainer2 {
-        margin-top: 1rem;
-        border-left: none;
-    }
-    #heading {
-        float: none;
-        font-size: 5vw;
-    }
-    #subHeading {
-        float: none;
-        font-size: 3vw;
-        padding-left: 0rem;
-    }
-    .sark {
-        margin-bottom: 2rem;
-    }
-    .kuchbhi{
-        margin-top: 0rem;
-    }
-    .sit {
-        max-height: 150px;
-        max-width: 150px;
-    }
-    .csi {
-        margin-top: 1rem;
-        max-height: 100px;
-        max-width: 100px;
-    }
-    .sses {
-        margin-top: 1rem;
-        max-height: 150px;
-        max-width: 150px;
-    }
-    .bcs {
-        margin-top: 1rem;
-        max-height: 150px;
-        max-width: 150px;
-    }
+  #menu_txt{
+    display: none;
+  }
+  .mainContainers{
+    top:20%;
+    font-size: 0.5rem;
+  }
+  .mainContainers p{
+    font-size: 1rem;
+  }
+  .loader-ring{
+    left:11%;
+  }
 
-    .sark {
-        max-height: 200px;
-        max-width: 200px;
-    }
+  #aboutFest{
+    font-size: 1.5rem !important;
+  }
 
-    .ieee {
-        margin-top: 1rem;
-        max-height: 200px;
-        max-width: 200px;
-    }
+  .sit_head{
+    top: 13%;
+  }
+  .head{
+    font-size: 0.7rem !important;
+  }
+
+  .mainContainers button{
+    width: 50% !important;
+  }
+
+  .text{
+    margin-top: -6.2rem;
+  }
+
+  label{
+    font-size: 1rem;
+  }
+
+
 }
-
-#domainLI li {
-    text-align: left;
-    font-size: 1.2em;
-    list-style-type: decimal;
-}
-
 /*******************Timer Part***********************/
 
 @import url('https://fonts.googleapis.com/css?family=Yantramanav');

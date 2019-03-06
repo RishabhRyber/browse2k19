@@ -1,6 +1,8 @@
 var rad=1.5;
+var siz=1.3;
 if (window.innerWidth>720){
   rad=5;
+  siz=1;
 }
 
 var canvas = document.querySelector("#scene"),
@@ -87,7 +89,7 @@ function initScene(){
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    ctx.font = "bold "+(ww/10)+"px sans-serif";
+    ctx.font = "bold "+(siz*ww/10)+"px sans-serif";
     ctx.textAlign = "center";
     ctx.fillText("BROWSE 2k19", ww/2, wh/2);
 
