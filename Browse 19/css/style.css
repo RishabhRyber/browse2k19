@@ -303,6 +303,7 @@ canvas {
     text-align: center;
     font-family: batman;
     background: #000;
+    cursor: pointer;
 }
 /**/
 #mc-embedded-subscribe{
