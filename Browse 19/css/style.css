@@ -328,7 +328,12 @@ canvas {
   background-size: cover;
   background-position: 50% 50%;
 }
-
+.footer{
+    bottom: 0px;
+    padding: 3px;
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+}
 /*Page separation Part*/
 
 .image{
@@ -411,6 +416,10 @@ canvas {
 @media screen and (max-width: 600px) {
     #menu_txt{
       display: none;
+    }
+    .footer{
+        padding: 0px;
+        font-size: 0.7rem !important;
     }
     .mainContainers{
       top:20%;
