@@ -411,6 +411,7 @@ canvas {
   width: 100%;
 }
 
+
 /*******Media Queries*******/
 
 @media screen and (max-width: 600px) {
@@ -454,8 +455,10 @@ canvas {
     label{
       font-size: 1rem;
     }
-
-
+    iframe{
+      width: 280px;
+      height: 300px;
+    }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px){
@@ -495,8 +498,10 @@ canvas {
   label{
     font-size: 1rem;
   }
-
-
+  iframe{
+    width: 300px;
+    height: 300px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait){
@@ -517,26 +522,21 @@ canvas {
   #aboutFest{
     font-size: 1.5rem !important;
   }
-
   .sit_head{
     top: 13%;
   }
   .head{
     font-size: 0.7rem !important;
   }
-
   .mainContainers button{
     width: 50% !important;
   }
   .text{
     margin-top: -6.2rem;
   }
-
   label{
     font-size: 1rem;
   }
-
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: landscape){
@@ -553,26 +553,21 @@ canvas {
   .loader-ring{
     left:11%;
   }
-
   #aboutFest{
     font-size: 1.5rem !important;
   }
-
   .sit_head{
     top: 13%;
   }
   .head{
     font-size: 0.7rem !important;
   }
-
   .mainContainers button{
     width: 50% !important;
   }
-
   .text{
     margin-top: -6.2rem;
   }
-
   label{
     font-size: 1rem;
   }
@@ -909,11 +904,11 @@ canvas {
 
 @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait){
     .container {
-        margin-top: 17vh;
+        margin-top: 0vh;
         left: 3%;
     }
     .center {
-        top: 68%;
+        top: 65%;
         left: 30%;
     }
     .register {
@@ -937,6 +932,9 @@ canvas {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: landscape){
+    body{
+      overflow: visible;
+    }
     .container {
         margin-top: 20vh;
     }
