@@ -458,7 +458,7 @@ canvas {
     }
 
     .text{
-      margin-top: -6.2rem;
+      margin-top: 0.8rem !important;
     }
 
     label{
@@ -577,6 +577,7 @@ canvas {
   .mainContainers button{
     width: 50% !important;
   }
+
   .text{
     margin-top: -6.2rem;
   }
@@ -783,6 +784,7 @@ canvas {
     font-size: 2vw;
     color: black;
     display: flex;
+    margin-top: 4rem;
     align-items: center;
     justify-content: center;
     font-family: 'archive';
