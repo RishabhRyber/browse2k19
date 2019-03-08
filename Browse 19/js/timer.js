@@ -69,7 +69,7 @@ let currentTimeLeft = function() {
     if (distance<0){
         clearInterval(currentTimeLeft);
         //return [" Co", "mp", "le", "te"]; }
-        document.getElementById('eventOver').textContent="Registrations Closed";
+        document.getElementById('eventOver').textContent="Event has begun";
         document.querySelector('.center').style.visibility='hidden';
         document.querySelector('#timer').style.visibility='hidden';
     }
