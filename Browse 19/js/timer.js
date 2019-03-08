@@ -72,6 +72,7 @@ let currentTimeLeft = function() {
         document.getElementById('eventOver').textContent="Event has begun";
         document.querySelector('.center').style.visibility='hidden';
         document.querySelector('#timer').style.visibility='hidden';
+        return [0,0,0,0];
     }
     else {
         return [days, hours, minutes, seconds];
