@@ -14,7 +14,7 @@ function fnshowBox(memberNo) {
         this.details=details;
     }
    if(memberNo=='member1'){
-       var mem=new member("Akash Kumar Srivastava","Founder","4th Year ISE, SIT, Tumkur","Website developer, Known for Paper Presentations, Management Skills, Network Security, Firebase, Certified Java, Android, MySQL, Python");;
+       var mem=new member("Akash Kumar Srivastava","Founder","4th Year ISE, SIT, Tumkur","Website developer, Certified Java Expert, Android, MySQL, Python, Node.js, Microservice Management, Network Security, Firebase, Known for Paper Presentations, Management Skills, Network Security, Firebase, Certified Java, Android, MySQL, Python");;
 
     }else if(memberNo=='member2'){
         var mem=new member("Abhinav Kumar Mallick","Co-Founder","3rd Year ISE, SIT, Tumkur","Website Developer, Photoshop Skills, Certified Ethical Hacking Expert, Node.JS, MySQL");

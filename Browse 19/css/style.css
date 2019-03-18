@@ -104,8 +104,13 @@
 }
 
 #eventOver{
-    position: absolute;
-    font-size: 4rem !important;
+    position: relative;
+    font-size: 2rem !important;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Quicksand;
+    margin-top: -10%;
+    font-weight: bolder;
 }
 
 
@@ -462,6 +467,9 @@ canvas {
     iframe{
       width: 280px;
       height: 300px;
+    }
+    #eventOver{
+      margin-top: -20%;
     }
 }
 

@@ -6,7 +6,7 @@
 // variables
 let time,
     countDownDate = new Date
-    ("March 19, 2019 23:59:59").getTime(),
+    ("March 18, 2019 23:59:59").getTime(),
     reverseFlapDirection = false,
     bgColor = "0,0,0",
     fontColor = "0,0,0",
@@ -22,7 +22,7 @@ setInterval(updateTime, 10);
 for (var x = 0; x < 8; x++) {
     // [!!] <-- changed from x < 8, to x < 9
     html +=                        //  now there are 9 flaps (3 for days)
-        `<div class=splitflap>       
+        `<div class=splitflap>
         <div class="front-top"></div>
         <div class="front-full"></div>
         <div class="back-top"></div>
@@ -65,11 +65,20 @@ let currentTimeLeft = function() {
         hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
         minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
         seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        console.log(distance);
 
-    if (distance<0){
+
+    if (distance<-17*60*60*1000){
+          clearInterval(currentTimeLeft);
+          document.getElementById('eventOver').textContent="Event Is Over";
+          document.querySelector('.center').style.visibility='hidden';
+          document.querySelector('#timer').style.visibility='hidden';
+          return [0,0,0,0];
+      }
+
+    else if (distance<0){
         clearInterval(currentTimeLeft);
-        //return [" Co", "mp", "le", "te"]; }
-        document.getElementById('eventOver').textContent="Event has begun";
+        document.getElementById('eventOver').textContent="Event Has Started";
         document.querySelector('.center').style.visibility='hidden';
         document.querySelector('#timer').style.visibility='hidden';
         return [0,0,0,0];
@@ -77,6 +86,7 @@ let currentTimeLeft = function() {
     else {
         return [days, hours, minutes, seconds];
     }
+
 }
 ///////////////////////////////////////////
 function separateIntoSingleDigits(time, days) {
